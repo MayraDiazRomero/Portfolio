@@ -21,7 +21,6 @@ body {
   .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
   
   .intro h1 {
@@ -64,29 +63,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .skills span {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1rem;
-    background-color: #112240;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-  }
-  
-  /* Studies Section */
-  .studies {
-    padding: 2rem 0;
-  }
-  
-  .card {
-    background-color: #112240;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
   }
   
   /* Projects Section */
