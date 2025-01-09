@@ -1,73 +1,274 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="de">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <div class="hero">
-        <div class="intro">
-          <h1>Hi! Ich bin <span>Mayra Diaz</span></h1>
-          <p>
-            <h3>Ich bin Student der Mechatronik und Robotik mit einer großen Leidenschaft für Innovation und Technologie. Meine Interessen liegen insbesondere im Entwerfen und Entwickeln von Prototypen, bei denen ich 3D-Druck und elektronisches Design kombiniere.</h3>
-          </p>
-          <div class="social-icons">
-            <a href="https://linkedin.com/in/tuperfil" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:tuemail@gmail.com"><i class="fas fa-envelope"></i></a>
-          </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">Über mich</a></li>
+                <li><a href="#skillset" class="nav-link" data-section="skillset">Skillset</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projekte</a></li>
+            </ul>
         </div>
-        <div class="profile">
-          <img src="img/myPhoto.PNG" alt="Foto de perfil">
-        </div>
-      </div>
-    </header>
+    </nav>
 
-    <main>
-      <section class="about">
-        <h2>Sobre mí</h2>
-        <p>
-          Persona apasionada por la programación, capaz de centrar un `<div>` sin morir en el intento. Aprendiz de tecnologías modernas como React, Node.js y MySQL.
-        </p>
-        <div class="skills">
-          <span><i class="fab fa-html5"></i> HTML</span>
-          <span><i class="fab fa-css3-alt"></i> CSS</span>
-          <span><i class="fab fa-js"></i> JavaScript</span>
-          <span><i class="fab fa-react"></i> React</span>
-          <span><i class="fab fa-node-js"></i> Node.js</span>
-          <span><i class="fas fa-database"></i> MySQL</span>
+    <!-- Home Section -->
+    <div id="home" class="section active">
+        <div class="hero-box home-box">
+            <div class="profile">
+                <img src="img/myPhoto.PNG" alt="Foto de perfil">
+            </div>
+            <h2>Mayra Diaz</h2>
+            <p>Studentin der <strong>Mechatronik/Robotik</strong> und Robotik, die sich aktiv mit ihrer Abschlussarbeit
+                zum Thema <strong>"Darstellung von komplexen mechatronischen Systemen und deren Funktionsweise in Mixed
+                    Reality"</strong> beschäftigt.</p>
+            <p>Meine Interessen umfassen das 3D- und Elektronikdesign sowie die Programmierung, mit besonderem Fokus auf
+                SPS und die Programmierung von Robotern.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-file"></i></a>
+            </div>
         </div>
-      </section>
+    </div>
 
-      <section class="studies">
-        <h2>Estudios</h2>
-        <div class="card">
-          <h3>Técnico Superior en Programación</h3>
-          <p>Universidad Tecnológica Nacional - 2024</p>
+    <!-- About Section -->
+    <div id="about" class="section">
+        <h2>Über mich</h2>
+        <div class="hero-box">
+            <h1>Über mich</h1>
+            <p>Hier können Sie einen kurzen Überblick über Ihre Karriere und Fähigkeiten hinzufügen.</p>
         </div>
-      </section>
+    </div>
 
-      <section class="projects">
-        <h2>Proyectos</h2>
-        <div class="project-card">
-          <h3>Portfolio Ana Rangel</h3>
-          <a href="https://uxcorprangel.com" target="_blank">Ver proyecto</a>
+    <!-- Skillset Section -->
+    <div id="skillset" class="section">
+        <div class="hero-box">
+            <h2>Skillset</h2>
+            <p>Liste der Fähigkeiten und Technologien, die Sie beherrschen.</p>
         </div>
-        <div class="project-card">
-          <h3>JSConf Chile 2024</h3>
-          <a href="https://comunidadjavascript.com" target="_blank">Ver proyecto</a>
-        </div>
-      </section>
-    </main>
+    </div>
 
-    <footer>
-      <p>&copy; 2025 Diseñado por [Tu Nombre]. Hecho con ❤️</p>
-    </footer>
-  </div>
+    <!-- Projects Section -->
+    <div id="projects" class="section">
+        <div class="hero-box">
+            <h2>Projekte</h2>
+            <p>::::::::::::::::::::::::::::::::::::::</p>
+
+            <!-- Project Cards -->
+            <div class="project-cards">
+                <!-- Project 1  Porfolio -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Portfolio</h3>
+                        <!-- GitHub Icon -->
+                        <div class="project-links">
+                            <a href="https://github.com/your-username/taurob-tracker" target="_blank"
+                                class="github-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p>::::::::::::::::::::::::::::::::::::::</p>
+                        <div class="tags">
+                            <span>Chatgpt</span>
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 Forward Kinematics-->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Forward Kinematics</h3>
+                         <!-- <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vipBzPpLLF8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div> --> 
+                        <p>::::::::::::::::::::::::::::::::::::::</p>
+                        <div class="tags">
+                            <span>ROS</span>
+                            <span>C++</span>
+                            <span>Docker</span>
+                            <span>Linux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 Paht Planning without map-->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Paht Planning without map</h3>
+                        <p>::::::::::::::::::::::::::::::::::::::</p>
+                        <div class="tags">
+                            <span>ROS</span>
+                            <span>C++</span>
+                            <span>Docker</span>
+                            <span>Linux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4  Paht Planning with map-->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Paht Planning with map</h3>
+                        <!-- GitHub Icon -->
+                        <div class="project-links">
+                            <a href="https://github.com/your-username/smart-home-system" target="_blank"
+                                class="github-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                        <p>::::::::::::::::::::::::::::::::::::::</p>
+                        <div class="tags">
+                            <span>ROS</span>
+                            <span>C++</span>
+                            <span>Docker</span>
+                            <span>Linux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5  Robotergesteuerte Station mit RobotStudio-->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Robotergesteuerte Station mit RobotStudio</h3>
+                        <!-- PDF Link -->
+                        <div class="project-links">
+                            <a href="docs/conveyorbelt.pdf" target="_blank" class="pdf-link">
+                                <i class="fas fa-file-pdf"></i> View PDF
+                            </a>
+                        </div>
+                        <p>::::::::::::::::::::::::::::::::::::::</p>
+                        <div class="tags">
+                            <span>RobotStudio</span>
+                            <span>Projektplanung</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 Simulation einer Rakete -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Simulation einer Rakete</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/imTIDb3ipyg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p>::::::::::::::::::::::::::::::::::::::</p>
+                        <div class="tags">
+                            <span>Elektronisches Design </span>
+                            <span>Platinenherstellung</span>
+                            <span>Autodesk Eagle</span>
+                            <span>Proteus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7  SPS Förderband-->
+                <div class="card">
+                    <div class="card-content"> 
+                        <h3>Förderband</h3>
+                        <div class="project-img">
+                            <img src="img/Conveyorbelt.png" alt="Conveyorbelt">
+                        </div>
+                        <!-- PDF Link -->
+                        <div class="project-links">
+                            <a href="docs/conveyorbelt.pdf" target="_blank" class="pdf-link">
+                                <i class="fas fa-file-pdf"></i> View PDF
+                            </a>
+                        </div>
+                        <p>::::::::::::::::::::::::::::::::::::::</p>
+                        <div class="tags">
+                            <span>Arduino</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7  Stoppuhr -->
+                <div class="card">
+                    <div class="card-content"> 
+                        <h3>Stoppuhr</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/52biLnr28Fc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <!-- GitHub Icon -->
+                        <div class="project-links">
+                            <a href="https://github.com/your-username/smart-home-system" target="_blank"
+                                class="github-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                        <p>::::::::::::::::::::::::::::::::::::::</p>
+                        <div class="tags">
+                            <span>Arduino</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 LED-Blinker-Sicherheitsweste mit Fahrtrichtungsanzeiger-->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>LED-Blinker-Sicherheitsweste mit Fahrtrichtungsanzeiger</h3>
+                        <p>::::::::::::::::::::::::::::::::::::::</p>
+                        <div class="tags">
+                            <span>Arduino</span>
+                            <span>Elektronisches Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10 Audiorhythmische LEDs -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Audiorhythmische LEDs</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vipBzPpLLF8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p>::::::::::::::::::::::::::::::::::::::</p>
+                        <div class="tags">
+                            <span>Elektronisches Design </span>
+                            <span>Platinenherstellung</span>
+                            <span>Autodesk Eagle</span>
+                            <span>Proteus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Mayra Diaz. All rights reserved.</p>
+        </footer>
+
+        <script src="js/script.js"></script>
 </body>
+
 </html>
