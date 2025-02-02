@@ -244,3 +244,21 @@ footer {
   color: #979797;
   margin-top: auto;
 }
+
+.github-link {
+  display: inline;
+  margin-left: 5px; /* Espaciado entre el texto y el icono */
+  vertical-align: middle;
+  color: inherit; /* Hereda el color del texto */
+  text-decoration: none; /* Elimina subrayado */
+}
+
+.github-link i {
+  color: #64ffda; /* Asegura el color correcto del icono */
+  font-size: 1.5rem; /* Ajusta el tamaño si es necesario */
+  transition: color 0.3s ease;
+}
+
+.github-link:hover i {
+  color:#ccd6f6; /* Color al pasar el mouse */
+}

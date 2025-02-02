@@ -114,44 +114,124 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 2 Forward Kinematics-->
-                <div class="card">
+                <!-- Project 1-1 Forward Kinematics-->
+                <div class="card"> 
                     <div class="card-content">
-                        <h3>Forward Kinematics</h3>
-                        <h3>Comming soon ...</h3>
+                        <h3>Forward Kinematics: Implementation of the general solution</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/1HPHzMneE0I"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p>Ein C++-Node wurde entwickelt, um die Bewegung des Roboters zu berechnen, Odometrie-Daten auf /odom zu veröffentlichen und die erforderlichen TF-Transformationen für die Visualisierung in RViz zu senden.</p>
+                        <p>Informationen und Bedingungen dieses Projekts wurden übernommen von: <a href="https://github.com/MusterLucas/MSROB_repeat_submission.git" target="_blank" rel="noopener noreferrer" class="github-link">
+                            <i class="fab fa-github"></i>
+                          </a></p>
                         <div class="tags">
                             <span>ROS</span>
                             <span>C++</span>
                             <span>Docker</span>
-                            <span>Linux</span>
+                            <span>RViz</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Project 3 Paht Planning without map-->
-                <div class="card">
+                <!-- Project 1-2 Forward Kinematics-->
+                <div class="card"> 
                     <div class="card-content">
-                        <h3>Path Planning without map</h3>
-                        <h3>Comming soon ...</h3>
+                        <h3>Forward kinematics with the ICR</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5hiQgfmJteo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p>Ein C++-Node dient zur Berechnung der Roboterbewegung auf einer Kreisbahn (L = 2 m) und veröffentlicht die Odometrie-Daten im /icr-Topic.</p>
+                        <p>Informationen und Bedingungen dieses Projekts wurden übernommen von: <a href="https://github.com/MusterLucas/MSROB_repeat_submission.git" target="_blank" rel="noopener noreferrer" class="github-link">
+                            <i class="fab fa-github"></i>
+                          </a></p>
                         <div class="tags">
                             <span>ROS</span>
                             <span>C++</span>
                             <span>Docker</span>
-                            <span>Linux</span>
+                            <span>RViz</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Project 4  Paht Planning with map-->
+                <!-- Project 2-1 Paht Planning without map-->
                 <div class="card">
                     <div class="card-content">
-                        <h3>Path Planning with map</h3>
-                        <h3>Comming soon ...</h3>
-                        <div class="tags">
-                            <span>ROS</span>
-                            <span>C++</span>
-                            <span>Docker</span>
-                            <span>Linux</span>
+                        <div class="card-content">
+                            <h3>Linear Controller</h3>
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/DCLSbu42-aI"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p>Der C++-Node linear_controller berechnet und veröffentlicht die Zielgeschwindigkeiten (v_t und ω_t) basierend auf einer vorgegebenen Zielpose (x, y, θ). Der Roboter wird in Gazebo simuliert.</p>
+                            <p>Informationen und Bedingungen dieses Projekts wurden übernommen von: <a href="https://github.com/MusterLucas/MSROB_repeat_submission.git" target="_blank" rel="noopener noreferrer" class="github-link">
+                                <i class="fab fa-github"></i>
+                              </a></p>
+                            <div class="tags">
+                                <span>ROS</span>
+                                <span>C++</span>
+                                <span>Docker</span>
+                                <span>Gazebo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2-2 Paht Planning without map-->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content">
+                            <h3>Path planner</h3>
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZqG3V_TWNGA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p>Der Roboter hat die Aufgabe, in einer Gazebo-Simulation fünf vordefinierte Posen zu erreichen, indem er den implementierten linearen Controller verwendet.</p>
+                            <p>Informationen und Bedingungen dieses Projekts wurden übernommen von: <a href="https://github.com/MusterLucas/MSROB_repeat_submission.git" target="_blank" rel="noopener noreferrer" class="github-link">
+                                <i class="fab fa-github"></i>
+                              </a></p>
+                            <div class="tags">
+                                <span>ROS</span>
+                                <span>C++</span>
+                                <span>Docker</span>
+                                <span>Gazebo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3-1 Paht Planning without map-->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-content">
+                            <h3>Localization</h3>
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/XLBgL27nkcw"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p>Eine SLAM-basierte Navigation für den MiR100 in Gazebo mit AMCL, map_server und RViz. Der Roboter erkennt Stationen über gazebo/model_states und fährt autonom dorthin. Die euklidische Distanz zwischen jeder Partikel und der tatsächlichen Roboterpose wird berechnet und über /amcl_error grafisch dargestellt.</p>
+                            <p>Informationen und Bedingungen dieses Projekts wurden übernommen von: <a href="https://github.com/MusterLucas/MSROB_repeat_submission.git" target="_blank" rel="noopener noreferrer" class="github-link">
+                                <i class="fab fa-github"></i>
+                              </a></p>
+                            <div class="tags">
+                                <span>ROS</span>
+                                <span>C++</span>
+                                <span>Docker</span>
+                                <span>Gazebo</span>
+                            </div>
                         </div>
                     </div>
                 </div>
